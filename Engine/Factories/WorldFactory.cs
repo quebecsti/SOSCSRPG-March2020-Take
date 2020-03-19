@@ -16,7 +16,6 @@ namespace Engine.Factories
             newWorld.AddLocation(-1, -1, "Farmer's house","A farmer's house", @"C:\Users\ericsaumier\source\repos\SOSCSRPG\Engine\Images\Locations\farmhouse.png");
             newWorld.AddLocation(-2, -1, "Farmer's field", "A field with Corn and rats", @"C:\Users\ericsaumier\source\repos\SOSCSRPG\Engine\Images\Locations\Home.png");
 
-
             newWorld.AddLocation(-1, 0, "Trading Shop",
                 "The shop of Susan, the trader.",
                 @"C:\Users\ericsaumier\source\repos\SOSCSRPG\Engine\Images\Locations\Trader.png");
@@ -40,7 +39,6 @@ namespace Engine.Factories
             newWorld.AddLocation(0, 2, "Herbalist's garden",
                 "There are many plants here, with snakes hiding behind them.",
                @"C:\Users\ericsaumier\source\repos\SOSCSRPG\Engine\Images\Locations\HerbalistsGarden.png");
-
 
             return newWorld;
         }
