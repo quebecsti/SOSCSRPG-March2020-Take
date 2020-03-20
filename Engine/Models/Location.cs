@@ -16,7 +16,7 @@ namespace Engine.Models
             set
             {
                 _xCoordinate = value;
-                OnPropertyChanged("XCoordinate");
+                OnPropertyChanged(nameof(XCoordinate));
             }
         }
         public int YCoordinate
@@ -25,7 +25,7 @@ namespace Engine.Models
             set
             {
                 _yCoordinate = value;
-                OnPropertyChanged("YCoordinate");
+                OnPropertyChanged(nameof(YCoordinate));
             }
         }
         public string Name
@@ -34,7 +34,7 @@ namespace Engine.Models
             set
             {
                 _name = value;
-                OnPropertyChanged("Name");
+                OnPropertyChanged(nameof(Name));
             }
         }
         public string Description
@@ -43,7 +43,7 @@ namespace Engine.Models
             set
             {
                 _description = value;
-                OnPropertyChanged("Description");
+                OnPropertyChanged(nameof(Description));
             }
         }
         public string ImageName
@@ -52,15 +52,11 @@ namespace Engine.Models
             set
             {
                 _imageName = value;
-                OnPropertyChanged("ImageName");
+                OnPropertyChanged(nameof(ImageName));
             }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+      
     }
 
 }
