@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
+﻿using System.ComponentModel;
 
 namespace Engine.Models
 {
@@ -14,66 +11,62 @@ namespace Engine.Models
         private int _level;
         private int _hitPoints;
 
-        public String Name 
-        { 
-            get
-            {
-                return _name;
-            }
-                set
+        public string Name
+        {
+            get => _name;
+            set
             {
                 _name = value;
                 OnPropertyChanged("Name");
 
             }
         }
-        public String CharacterClass
+        public string CharacterClass
         {
-            get {
-                return _characterClass;
-            }
+            get => _characterClass;
             set
             {
                 _characterClass = value; ;
                 OnPropertyChanged("CharacterClass");
             }
         }
-        public int HitPoints 
-        { 
+        public int HitPoints
+        {
             get
             {
                 return _hitPoints;
             }
-                set
+            set
             {
                 _hitPoints = value;
                 OnPropertyChanged("HitPoints");
 
             }
-                
+
         }
         public int ExperiencePoints
         {
             get { return _experiencePoints; }
-            set { 
+            set
+            {
                 _experiencePoints = value;
                 OnPropertyChanged("ExperiencePoints");
             }
         }
-        public int Level 
+        public int Level
         {
             get { return _level; }
-            set 
+            set
             {
                 _level = value;
                 OnPropertyChanged("Level");
             }
         }
-        public int Gold 
+        public int Gold
         {
             get { return _gold; }
-            set 
-            { 
+            set
+            {
                 _gold = value;
                 OnPropertyChanged("Gold");
             }

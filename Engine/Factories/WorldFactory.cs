@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Engine.Models;
+﻿using Engine.Models;
 
 
 namespace Engine.Factories
@@ -11,9 +8,25 @@ namespace Engine.Factories
         internal World CreateWorld()
         {
             World newWorld = new World();
+            /*
+             * 
+             *      
+             * 
+             *                                               
+             *                                                               erbalist Garden ( 0, 2)                           
+             *                                                                  Herbalist hut( 0, 1)                              
+             *                                              Trader Shop  (-1, 0)  TownSquare ( 0, 0)           TownGate (1,0)    spider Forest( 2, 0)                      
+             *              Farmer Field (-2,-1)            Farmer House (-1,-1)  Home       ( 0,-1)
+             *                                               
+             *                                               
+             * 
+             */
 
-            newWorld.AddLocation( 0, -1, "Home", "This is your Home", @"C:\Users\ericsaumier\source\repos\SOSCSRPG\Engine\Images\Locations\Home.png");
-            newWorld.AddLocation(-1, -1, "Farmer's house","A farmer's house", @"C:\Users\ericsaumier\source\repos\SOSCSRPG\Engine\Images\Locations\farmhouse.png");
+
+
+
+            newWorld.AddLocation(0, -1, "Home", "This is your Home", @"C:\Users\ericsaumier\source\repos\SOSCSRPG\Engine\Images\Locations\Home.png");
+            newWorld.AddLocation(-1, -1, "Farmer's house", "A farmer's house", @"C:\Users\ericsaumier\source\repos\SOSCSRPG\Engine\Images\Locations\farmhouse.png");
             newWorld.AddLocation(-2, -1, "Farmer's field", "A field with Corn and rats", @"C:\Users\ericsaumier\source\repos\SOSCSRPG\Engine\Images\Locations\Home.png");
 
             newWorld.AddLocation(-1, 0, "Trading Shop",

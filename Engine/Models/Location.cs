@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
+﻿using System.ComponentModel;
 
 namespace Engine.Models
 {
@@ -15,45 +12,49 @@ namespace Engine.Models
 
         public int XCoordinate
         {
-            get
-            {
-                return _xCoordinate;
-            }
+            get => _xCoordinate;
             set
             {
                 _xCoordinate = value;
                 OnPropertyChanged("XCoordinate");
             }
-
         }
         public int YCoordinate
         {
-            get { return _yCoordinate; }
+            get => _yCoordinate;
+            set
+            {
+                _yCoordinate = value;
+                OnPropertyChanged("YCoordinate");
+            }
         }
         public string Name
         {
-            get
+            get => _name;
+            set
             {
-                return _name;
-
-
+                _name = value;
+                OnPropertyChanged("Name");
             }
         }
         public string Description
         {
-            get
+            get => _description;
+            set
             {
-                return _description;
-
+                _description = value;
+                OnPropertyChanged("Description");
             }
-
         }
         public string ImageName
         {
-            get { return _imageName; }
-            set { }
+            get => _imageName;
+            set
+            {
+                _imageName = value;
+                OnPropertyChanged("ImageName");
+            }
         }
-
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
@@ -61,4 +62,5 @@ namespace Engine.Models
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
+
 }
